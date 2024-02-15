@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - '*'
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+
+      - name: Cache client node modules
+        uses: actions/cache@v2
+        with:
+          path: client/node_modules
+          key: client-${{ runner.os }}-node-${{ hashFiles('./package-lock.json') }}
+          restore-keys: |
+            client-${{ runner.os }}-node-
+
+      - name: Install client dependencies
+        run: npm ci
+
+      - name: Lint client
+        run: npm run lint
+
+      - name: Build client
+        run: npm run build
