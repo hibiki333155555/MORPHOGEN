@@ -2,11 +2,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom' // for routing
 
 // page's
-import { Top } from './page/Top'
-import { News } from './page/News'
-import { Article } from './page/Article'
-import { Art } from './page/Art'
-import { Us } from './page/Us'
+import { Top } from './pages/Top'
+import { News } from './pages/News'
+import { Article } from './pages/Article'
+import { Art } from './pages/Art'
+import { Us } from './pages/Us'
 
 export const App = () => {
 
