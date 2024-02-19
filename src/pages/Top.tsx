@@ -1,5 +1,5 @@
 // component's
-import { Nav } from '../components/top/Nav'
+import { Nav } from "../components/top/Nav" 
 
 export const Top = () => {
     return (
