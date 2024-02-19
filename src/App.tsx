@@ -1,26 +1,15 @@
-// lib's
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom' // for routing
 
-// page's
-import { Top } from './page/Top'
-import { News } from './page/News'
-import { Article } from './page/Article'
-import { Art } from './page/Art'
-import { Us } from './page/Us'
-
-export const App = () => {
+function App() {
 
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Top />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/article" element={<Article />} />          
-          <Route path="/art" element={<Art />} />
-          <Route path="/us" element={<Us />} />
-        </Routes>
-      </Router>
+      <div className="bg-cover h-screen w-screen flex sm:flex-row space-x-72 justify-center xl:bg-[url('./assets/home.png')] relative" >
+        <div className="pt-64 pl-8 space-y-8 absolute right-32">
+          <h1 className="text-6xl font-bold text-white">Article</h1>
+        </div>
+      </div>
     </>
   )
 }
+
+export default App
