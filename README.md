@@ -1,3 +1,4 @@
+next.js x tailwind
 
 ├── components pageファイルの細分化ファイル
 │   ├── news
