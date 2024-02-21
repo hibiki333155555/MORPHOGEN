@@ -1,13 +1,13 @@
 next.js x tailwind
 
-├── components pageファイルの細分化ファイル
+├── components pageファイルの細分化ファイル群
 │   ├── news
 │   ├── article
 |   ├── art
 |   ├── us
 │   └── top
 ├── package.json
-├── pages
+├── pages サイトの主となるファイル群
 │   ├── _app.tsx　
 │   ├── _documents.tsx
 │   ├── art.tsx
