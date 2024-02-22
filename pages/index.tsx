@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { nav as Nav } from "@/components/top/nav";
 
 export default function Home() {
