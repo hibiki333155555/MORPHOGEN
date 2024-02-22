@@ -1,22 +1,21 @@
-next.js x tailwind
-
 ├── components pageファイルの細分化ファイル群
-│   ├── news
-│   ├── article
+│   ├── news
+│   ├── article
 |   ├── art
 |   ├── us
-│   └── top
-├── package.json
+│   └── top
 ├── pages サイトの主となるファイル群
-│   ├── _app.tsx　
-│   ├── _documents.tsx
-│   ├── art.tsx
-│   ├── us.tsx
-│   ├── article.tsx
-│   ├── index.tsx
-│   ├── news.tsx
-│   └── article
+│   ├── _app.tsx　
+│   ├── _documents.tsx
+│   ├── art.tsx
+│   ├── us.tsx
+│   ├── article.tsx
+│   ├── index.tsx
+│   ├── news.tsx
+│   └── article
 ├── public
-│   └── assets
+│   └── assets
 ├── styles
-│   └── globals.css
+│   └── globals.css
+├── package.json
+└── _article
