@@ -35,7 +35,7 @@ const Article: React.FC<Article> = ({ article }) => {
     return (
         <div className=" w-screen h-screen bg-white">
             {article.map((article: any) => (
-                <div key={article.slug} className=' text-black text-center m-10'>
+                <div key={article.slug} className=' text-cyan-500 text-center m-10'>
                     <Link href={`/article/${article.slug}`}>
                         <h1>{article.matter.title}</h1>
                         <h2>{article.matter.date}</h2>
