@@ -45,7 +45,7 @@ const Article: React.FC<ArticleProps> = ({ matter, content }) => {
     return (
         <div className=' w-screen h-screen text-black relative'>
             <div className='absolute top-10 left-[42%] prose m-10'>
-                <h1 className=' mb-16 text-5xl'>{matter.title}</h1>
+                <h1 className='text-cyan-500 mb-16 text-5xl'>{matter.title}</h1>
                 <span className=' mb-16 text-1xl font-bold'>{matter.date}</span>
                 <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
             </div>
